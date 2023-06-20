@@ -13,5 +13,3 @@ spec:
     app: {{ .Values.appName }}
     tier: frontend
   type: NodePort
-externalIPs:
-  - 192.168.49.2
