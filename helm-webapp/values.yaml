@@ -1,6 +1,7 @@
 appName: myhelmapp
 
 port: 80
+externalIPs: 192.168.49.2
 
 configmap:
   name: myhelmapp-configmap-v1
