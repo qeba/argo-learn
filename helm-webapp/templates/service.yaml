@@ -5,12 +5,14 @@ metadata:
   labels:
     app: {{ .Values.appName }}
 spec:
+  type: LoadBalancer
   ports:
   - port: 80
     protocol: TCP
     name: flask
-  externalIPs: {{ .Values.externalIPs }}
   selector:
     app: {{ .Values.appName }}
     tier: frontend
-  type: LoadBalancer
+  externalIPs: 
+    - {{ .Values.externalIPs }}
+
