@@ -6,4 +6,5 @@ patches:
 
 configMapGenerator:
 - name: mykustom-map
-  env: config.properties
+  files: 
+   - config.properties
